@@ -11,6 +11,6 @@ app.use("/ciudades",ciudadRoutes)
 
 mongoose.connect('mongodb://userX:root@3.94.165.232:27017/baseX?authSource=admin')
 .then(()=>{
-    app.listen(8080,()=>console.log("Servidor en línea"))
+    app.listen(8080,()=>console.log("El servidor esta en línea. XD Ya"))
 })
 .catch(err=>console.log(err))
