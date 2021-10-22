@@ -3,20 +3,21 @@ const mongoose = require('mongoose')
 // Define schema
 const CiudadesSchema = mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
-    
     ciudad:{
         type:String,
         required: true
     },
-    numero:Number,
-    tipo:{
-        type:[String]
-    },
-    descripcion:{
+    numero_cd:{
         type:String,
-        required: false
+        required: true
+    },
+    atraccion_ciudad:{
+        type:String,
+        required: true
+    },
+    contador:{
+        type:Number
     }
-
 },{collection:'ciudades'})
 
 
