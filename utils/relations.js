@@ -3,5 +3,4 @@ function aplicarRelaciones(sequelize) {
     const Ciudades = sequelize.models.ciudades
 }
 
-
 module.exports = { aplicarRelaciones }
